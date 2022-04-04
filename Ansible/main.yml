@@ -15,7 +15,7 @@
       enabled: false
 
   - name: Disable SSH Root Login
-    #Verify: Rum SSH command to the machine with root user
+    #Verify: Run SSH command to the machine with root user
     lineinfile:
       dest: /etc/ssh/sshd_config
       regexp: '^PermitRootLogin'
@@ -38,7 +38,7 @@
     #Verify: Run following commands:
     #yum list installed | grep bind-utils
     #yum list installed | grep man
-    # yum list installed | grep man-pages
+    #yum list installed | grep man-pages
     #yum list installed | grep mlocate
     #yum list installed | grep sysstat
     yum:
